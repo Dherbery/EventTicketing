@@ -1,0 +1,117 @@
+.slide,
+.slideContentIcon {
+  border-radius: 18.95px 18.95px 0 0;
+}
+.slideContentIcon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 137.4px;
+  right: -343px;
+  bottom: -137.4px;
+  left: 343px;
+  background-color: var(--color-white);
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+.b,
+.sep {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.sep {
+  align-self: stretch;
+}
+.b {
+  margin-top: -3.8px;
+  display: inline-block;
+}
+.frameWrapper,
+.sepParent,
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.wrapper {
+  flex-direction: row;
+  padding: 0;
+  text-align: left;
+  font-size: var(--font-size-9xl-4);
+  color: var(--color-black);
+}
+.frameWrapper,
+.sepParent {
+  flex-direction: column;
+}
+.sepParent {
+  align-self: stretch;
+}
+.frameWrapper {
+  width: 26.5px;
+  padding: var(--padding-11xs-9) 0 0;
+  box-sizing: border-box;
+}
+.directlySeatedAnd,
+.superJuniorSm {
+  position: relative;
+  line-height: 150%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.superJuniorSm {
+  height: 48px;
+  display: inline-block;
+}
+.directlySeatedAnd {
+  font-size: var(--font-size-sm);
+  color: var(--color-dimgray);
+}
+.superJuniorSmTownLive10Parent {
+  width: 241.6px;
+  flex-direction: column;
+  gap: var(--gap-6xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.slideContentParent,
+.slideParent,
+.superJuniorSmTownLive10Parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.slideParent {
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-lgi-9) var(--padding-3xl) var(--padding-3xl-7);
+  position: relative;
+  gap: var(--gap-3xl-8);
+}
+.slideContentParent {
+  width: 343px;
+  flex-direction: column;
+  min-width: 326px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-xs-4);
+  color: var(--color-mediumblue);
+  font-family: var(--font-dm-sans);
+}
+@media screen and (max-width: 450px) {
+  .b {
+    font-size: var(--font-size-4xl);
+  }
+}

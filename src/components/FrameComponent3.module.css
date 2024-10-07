@@ -1,0 +1,104 @@
+.blog {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 85px;
+}
+.blogWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-171xl) 0 var(--padding-170xl);
+}
+.loremIpsumDolor {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+  font-family: var(--font-dm-sans);
+  color: var(--color-dimgray);
+}
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.content {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.blogPosts,
+.blogPosts1,
+.content {
+  display: flex;
+  max-width: 100%;
+}
+.blogPosts1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-9xl-5);
+  font-size: var(--font-size-xl);
+  font-family: var(--font-dm-sans);
+}
+.blogPosts {
+  width: 1086px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-29xl-5);
+}
+.blogPostsWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-darkslateblue-200);
+  font-family: var(--font-proxima-nova);
+}
+@media screen and (max-width: 1100px) {
+  .blogPosts1 {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(257px, 446px));
+  }
+}
+@media screen and (max-width: 750px) {
+  .blog {
+    font-size: var(--font-size-13xl);
+  }
+  .blogPosts1 {
+    grid-template-columns: minmax(257px, 1fr);
+  }
+  .blogPosts {
+    gap: var(--gap-5xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .blog {
+    font-size: var(--font-size-5xl);
+  }
+  .blogWrapper {
+    padding-left: var(--padding-75xl);
+    padding-right: var(--padding-76xl);
+    box-sizing: border-box;
+  }
+}
